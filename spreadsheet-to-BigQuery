@@ -1,0 +1,23 @@
+-- QUIZ no.1 (menampilkan semua data di tabel superstore)
+SELECT *
+ FROM `dqlab-bootcampda-qodir.superstore.transaction` LIMIT 1000
+;
+
+-- QUIZ no.2
+-- menampilkan informasi: 
+-- Order_ID,Ship_Date,Sales,Discount,Profit
+ SELECT
+  Order_ID,
+  Ship_Date,
+  Sales,
+  Discount,
+  Profit,
+ FROM `superstore.transaction`;
+
+-- QUIZ no.3
+-- Tampilkan seluruh kombinasi kategori dan sub kategori yang sudah pernah terjual
+SELECT DISTINCT Category, Sub_Category
+FROM `superstore.transaction`
+WHERE Quantity > 1;
+
+--you can access dataset superstore, click link: https://docs.google.com/spreadsheets/d/1P_5fSbnhpn3cvMehXk5JktmGKFN4JVOgEL3vnMMoa8g/edit?gid=410161316#gid=410161316
